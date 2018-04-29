@@ -1,0 +1,49 @@
+import onmt
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("--config", help="[[Read options form this file]]",type=str)
+
+
+parser.add_argument("-train_src", help="[[Path to the training source data]]]",type=str)
+parser.add_argument("-train_tgt", help="[[Path to the training target data]]]",type=str)
+parser.add_argument("-train_par", help="[[Path to the training paragraph data]]",type=str)
+parser.add_argument("-valid_src", help="[[Path to the validation source data]]]",type=str)
+parser.add_argument("-valid_tgt", help="[[Path to the validation target data]]]",type=str)
+parser.add_argument("-valid_par", help="[[Path to the validation paragraph data]]",type=str)
+
+parser.add_argument('-save_data', help="[[Output file for the prepared data]]", type=str)
+
+parser.add_argument('-src_vocab_size', default=50000, help="[[Size of the source vocabulary]]", type=int)
+parser.add_argument('-tgt_vocab_size', default=50000, help="[[Size of the target vocabulary]]", type=int)
+parser.add_argument('-par_vocab_size', default=50000, help="[[Size of the paragraph vocabulary]]", type=int)
+parser.add_argument('-src_vocab', help="[[Path to an existing source vocabulary]]", type=str)
+parser.add_argument('-tgt_vocab', help="[[Path to an existing target vocabulary]]", type=str)
+parser.add_argument('-par_vocab', help="[[Path to an existing paragraph vocabulary]]" type=str)
+parser.add_argument('-features_vocabs_prefix', help="[[Path prefix to existing features vocabularies]]" type=str)
+
+parser.add_argument('-src_seq_length', default=50, help="[[Maximum source sequence length]]", type=int)
+parser.add_argument('-tgt_seq_length', default=50, help="[[Maximum target sequence length]]", type=int)
+parser.add_argument('-par_seq_length', default=50, help="[[Maximum paragraph sequence length]]", type=int)
+parser.add_argument('-shuffle', default=1, help="[[Shuffle data]]", type=int)
+parser.add_argument('-seed', default=3435, help="[[Random seed]]", type=int)
+
+parser.add_argument('-report_every', default=100000, help="[[Report status every this many sentences]]", type=int)
+
+args = parser.parse_args()
+
+"""def hasFeatures(filename):
+	reader = onmt.utils.FileReader.new(filename)
+	_, _, numFeatures = onmt.utils.Features.extract(reader:next())
+	reader.close()
+	return numFeatures > 0
+"""
+
+def main():
+	
+
+main()
+
+print(args.train_src)
+print(args.config)
