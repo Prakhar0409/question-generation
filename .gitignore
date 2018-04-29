@@ -1,0 +1,9 @@
+snapshots
+
+sentence/OpenNMT-py
+paragraph/OpenNMT-py
+sentence/snapshots
+paragraph/snapshots
+sentence/data
+paragraph/data
+sentence/logs
