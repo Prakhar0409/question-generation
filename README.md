@@ -14,6 +14,7 @@ Look into:
 * Uses ONMT library
 
 Implementation: PyTorch
+
 Ideas from: https://arxiv.org/abs/1705.00106
 
 A report of the several different directions taken and the experiments is as follows:
@@ -29,4 +30,5 @@ Demo version has been hosted at: http://www.cse.iitd.ac.in/nlpdemo/ques_gen
 ## Contributers
 
 @Prakhar0409
+
 @ArkaSaha
